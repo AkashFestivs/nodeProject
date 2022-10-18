@@ -90,25 +90,25 @@ footer{
     //     }
     // });
 
-    document.querySelector('.loginbtn').addEventListener('click',function(){
-        console.log('btn clicked');
-        let userid = document.querySelector('.text').value;
-        let password = document.querySelector('.password').value;
-        console.log('UserID : ',userid);
-        console.log('password : ',password);
-        $.ajax({
-            url: '/home',
-            type:'GET',
-            data:{
-                userid: userid,
-                password: password
-            },
-            success: function(response){
-               console.log(response)
-            }
-        })
+    // document.querySelector('.loginbtn').addEventListener('click',function(){
+    //     console.log('btn clicked');
+    //     let userid = document.querySelector('.text').value;
+    //     let password = document.querySelector('.password').value;
+    //     console.log('UserID : ',userid);
+    //     console.log('password : ',password);
+    //     $.ajax({
+    //         url: '/home',
+    //         type:'GET',
+    //         data:{
+    //             userid: userid,
+    //             password: password
+    //         },
+    //         success: function(response){
+    //            console.log(response)
+    //         }
+    //     })
        
-    });
+    // });
 </script>
 </body>
 </html>

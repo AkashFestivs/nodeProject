@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Classic Login Form Example</title>
+<style>
+body {
+    background: #abcdef;
+    font-family: Assistant,sans-serif;
+    display: flex;
+    min-height: 90vh;
+}
+.login{
+    color: #fff;
+    background:#136a8a;
+    background: -webkit-linear-gradient(to right,#267871,#136a8a);
+    background: linear-gradient(to right,#267871,#136a8a);
+    margin: auto;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%), 0 10px 20px rgb(0 0 0 / 30%), 0 30px 60px 1px rgb(0 0 0 / 50%);
+    border-radius: 8px;
+    padding: 90px;
+}
+footer{
+    height: 30px;
+    background-color: #267871;
+}
+.loginbtn{
+    padding: 6px;
+    background-color: steelblue;
+    border-radius: 13px;
+    width: 100px;
+}
+
+
+/* .move{
+    transition: ease-in-out 0.5s;
+    margin-left: 100px;
+}
+.moveagain{
+    transition: ease-in-out 0.5s;
+    margin-right: 100px;
+    margin-left: -30%;
+}
+.loginbtn_div{
+    margin-left: -45%;
+    margin-right: -45%;
+} */
+
+</style>
+</head>
+<body>
+
+<section class='login' id='login'>
+<div class='head'>
+<h1 style="color: tomato;" class='company'><u>Node Login Page</u></h1>
+</div>
+<h3 class='msg'>Welcome to test Login</h3>
+<div class='form'>
+<form style="text-align: center;" action="/home" method="get">
+<input style="padding: 5%;" type="text" placeholder='Username' class='text' id='username' required><br>
+<input style="padding: 5%;"  type="password" placeholder='••••••••••••••' class='password'><br><br>
+<div class="loginbtn_div">
+<button class="loginbtn">Login</button>
+</div>
+</form>
+</div>
+</section>
+<script>
+    // document.querySelector('.loginbtn_div').addEventListener('mouseover',function(){
+
+    //     let userid = document.querySelector('.text').value;
+    //     if(!userid)
+    //     {
+    //         document.querySelector('.loginbtn').classList.add('move');
+    //     }
+    //     if(document.querySelector('.loginbtn').classList.contains('moveagain') || !userid)
+    //     {
+    //         document.querySelector('.loginbtn').classList.replace('moveagain','move');
+    //     }
+
+
+    // });
+    // document.querySelector('.loginbtn').addEventListener('click',function(){
+    //     let userid = document.querySelector('.text').value;
+    //     if(document.querySelector('.loginbtn').classList.contains('move') || !userid)
+    //     {
+    //         document.querySelector('.loginbtn').classList.replace('move','moveagain');
+    //     }
+    // });
+</script>
+</body>
+</html>
